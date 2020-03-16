@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name linear_reg)(type Legacy)(uri ${KIPRJMOD}/library/linear_reg.lib)(options "")(descr ""))
+  (lib (name conn-bbl)(type Legacy)(uri ${KIPRJMOD}/library/conn-bbl.lib)(options "")(descr ""))
+)
