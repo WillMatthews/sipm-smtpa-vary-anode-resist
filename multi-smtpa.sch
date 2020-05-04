@@ -1642,7 +1642,7 @@ U 1 1 5F7959D1
 P 10300 6150
 F 0 "H1" H 10400 6196 50  0000 L CNN
 F 1 "MountingHole" H 10400 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 10300 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 10300 6150 50  0001 C CNN
 F 3 "~" H 10300 6150 50  0001 C CNN
 	1    10300 6150
 	1    0    0    -1  
@@ -1653,7 +1653,7 @@ U 1 1 5F795FA9
 P 10300 6350
 F 0 "H2" H 10400 6396 50  0000 L CNN
 F 1 "MountingHole" H 10400 6305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 10300 6350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 10300 6350 50  0001 C CNN
 F 3 "~" H 10300 6350 50  0001 C CNN
 	1    10300 6350
 	1    0    0    -1  
@@ -1664,7 +1664,7 @@ U 1 1 5F7961B5
 P 11050 6150
 F 0 "H3" H 11150 6196 50  0000 L CNN
 F 1 "MountingHole" H 11150 6105 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 11050 6150 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 11050 6150 50  0001 C CNN
 F 3 "~" H 11050 6150 50  0001 C CNN
 	1    11050 6150
 	1    0    0    -1  
@@ -1675,7 +1675,7 @@ U 1 1 5F7964AE
 P 11050 6350
 F 0 "H4" H 11150 6396 50  0000 L CNN
 F 1 "MountingHole" H 11150 6305 50  0000 L CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_DIN965_Pad" H 11050 6350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 11050 6350 50  0001 C CNN
 F 3 "~" H 11050 6350 50  0001 C CNN
 	1    11050 6350
 	1    0    0    -1  
@@ -2998,4 +2998,557 @@ Wire Notes Line
 	11650 9800 15800 9800
 Wire Notes Line
 	15800 9800 15800 6850
+$Comp
+L Regulator_Linear:LM317L_SO8 U9
+U 1 1 5EB4A33F
+P 12850 2650
+F 0 "U9" H 12850 2892 50  0000 C CNN
+F 1 "LM317L_SO8" H 12850 2801 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 12850 2850 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/snvs775k/snvs775k.pdf" H 12850 2450 50  0001 C CNN
+F 4 "LM317LDR2GOSDKR-ND" H 12850 2650 50  0001 C CNN "Part"
+	1    12850 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C60
+U 1 1 5EB4A345
+P 12450 2800
+F 0 "C60" H 12250 2850 50  0000 L CNN
+F 1 "0.1u" H 12250 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 12488 2650 50  0001 C CNN
+F 3 "~" H 12450 2800 50  0001 C CNN
+	1    12450 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R17
+U 1 1 5EB4A34B
+P 13000 3450
+F 0 "R17" H 13150 3400 50  0000 R CNN
+F 1 "1K0" H 13250 3500 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 12930 3450 50  0001 C CNN
+F 3 "~" H 13000 3450 50  0001 C CNN
+	1    13000 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R18
+U 1 1 5EB4A351
+P 13250 2800
+F 0 "R18" H 13180 2754 50  0000 R CNN
+F 1 "240R" H 13180 2845 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 13180 2800 50  0001 C CNN
+F 3 "~" H 13250 2800 50  0001 C CNN
+	1    13250 2800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C64
+U 1 1 5EB4A357
+P 13700 2800
+F 0 "C64" H 13815 2846 50  0000 L CNN
+F 1 "1u" H 13815 2755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 13738 2650 50  0001 C CNN
+F 3 "~" H 13700 2800 50  0001 C CNN
+	1    13700 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12300 2650 12450 2650
+Wire Wire Line
+	13150 2650 13250 2650
+Wire Wire Line
+	12850 2950 13250 2950
+Wire Wire Line
+	12450 3600 12450 2950
+Wire Wire Line
+	13700 3600 13700 2950
+Wire Wire Line
+	13800 2650 13700 2650
+NoConn ~ 13000 3000
+Connection ~ 13700 2650
+Connection ~ 12450 2650
+Wire Wire Line
+	12450 2650 12550 2650
+Connection ~ 13250 2650
+Wire Wire Line
+	13250 2650 13700 2650
+$Comp
+L Device:R_POT_TRIM RV8
+U 1 1 5EB4A36A
+P 13000 3150
+F 0 "RV8" H 12930 3196 50  0000 R CNN
+F 1 "R_POT_TRIM" H 12930 3105 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Bourns_3314G_Vertical" H 13000 3150 50  0001 C CNN
+F 3 "~" H 13000 3150 50  0001 C CNN
+F 4 "987-1161-ND" H 13000 3150 50  0001 C CNN "Part"
+	1    13000 3150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 3600 13000 3600
+Connection ~ 13000 3600
+Wire Wire Line
+	13000 3600 13700 3600
+Wire Wire Line
+	12850 3150 12850 2950
+Connection ~ 12850 2950
+$Comp
+L power:+48V #PWR0128
+U 1 1 5EB4A375
+P 12300 2650
+F 0 "#PWR0128" H 12300 2500 50  0001 C CNN
+F 1 "+48V" H 12315 2823 50  0000 C CNN
+F 2 "" H 12300 2650 50  0001 C CNN
+F 3 "" H 12300 2650 50  0001 C CNN
+	1    12300 2650
+	1    0    0    -1  
+$EndComp
+Text Label 13800 2650 2    50   ~ 0
+VDC_30
+$Comp
+L power:GND #PWR0129
+U 1 1 5EB4A37C
+P 13700 3600
+F 0 "#PWR0129" H 13700 3350 50  0001 C CNN
+F 1 "GND" H 13705 3427 50  0000 C CNN
+F 2 "" H 13700 3600 50  0001 C CNN
+F 3 "" H 13700 3600 50  0001 C CNN
+	1    13700 3600
+	1    0    0    -1  
+$EndComp
+Connection ~ 13700 3600
+$Comp
+L Connector_Generic:Conn_01x05 J22
+U 1 1 5EB4A383
+P 13250 1100
+F 0 "J22" H 13330 1142 50  0000 L CNN
+F 1 "J SMTPA" H 13330 1051 50  0000 L CNN
+F 2 "footprints:SMTPA J30035" H 13250 1100 50  0001 C CNN
+F 3 "~" H 13250 1100 50  0001 C CNN
+	1    13250 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13050 1200 12500 1200
+Wire Wire Line
+	12500 1200 12500 1350
+Wire Wire Line
+	12700 1300 12700 1350
+$Comp
+L power:GND #PWR0130
+U 1 1 5EB4A38C
+P 12500 1350
+F 0 "#PWR0130" H 12500 1100 50  0001 C CNN
+F 1 "GND" H 12505 1177 50  0000 C CNN
+F 2 "" H 12500 1350 50  0001 C CNN
+F 3 "" H 12500 1350 50  0001 C CNN
+	1    12500 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0131
+U 1 1 5EB4A392
+P 12700 1350
+F 0 "#PWR0131" H 12700 1100 50  0001 C CNN
+F 1 "GND" H 12705 1177 50  0000 C CNN
+F 2 "" H 12700 1350 50  0001 C CNN
+F 3 "" H 12700 1350 50  0001 C CNN
+	1    12700 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0132
+U 1 1 5EB4A398
+P 12300 1350
+F 0 "#PWR0132" H 12300 1100 50  0001 C CNN
+F 1 "GND" H 12305 1177 50  0000 C CNN
+F 2 "" H 12300 1350 50  0001 C CNN
+F 3 "" H 12300 1350 50  0001 C CNN
+	1    12300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12700 1300 13050 1300
+Wire Wire Line
+	13050 900  12300 900 
+Wire Wire Line
+	12300 900  12300 1350
+Wire Wire Line
+	13050 1000 12350 1000
+Wire Wire Line
+	13050 1100 12350 1100
+Text Label 12350 1000 0    50   ~ 0
+Fast_30
+Text Label 12350 1100 0    50   ~ 0
+VDC_30
+$Comp
+L Connector:Conn_Coaxial J23
+U 1 1 5EB4A3C7
+P 14450 1050
+F 0 "J23" H 14378 1288 50  0000 C CNN
+F 1 "Conn_Coaxial" H 14378 1197 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132289_EdgeMount" H 14450 1050 50  0001 C CNN
+F 3 " ~" H 14450 1050 50  0001 C CNN
+	1    14450 1050
+	-1   0    0    -1  
+$EndComp
+Text Label 15000 1050 2    50   ~ 0
+Fast_30
+$Comp
+L power:GND #PWR0133
+U 1 1 5EB4A3CE
+P 14450 1250
+F 0 "#PWR0133" H 14450 1000 50  0001 C CNN
+F 1 "GND" H 14455 1077 50  0000 C CNN
+F 2 "" H 14450 1250 50  0001 C CNN
+F 3 "" H 14450 1250 50  0001 C CNN
+	1    14450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15000 1050 14650 1050
+Wire Wire Line
+	12700 2050 13100 2050
+Wire Wire Line
+	12700 1750 13100 1750
+Wire Wire Line
+	12300 2050 12700 2050
+Wire Wire Line
+	12300 1750 12700 1750
+Connection ~ 12700 1750
+Connection ~ 12700 2050
+$Comp
+L Device:C C62
+U 1 1 5EB4A3E9
+P 13100 1900
+F 0 "C62" H 13215 1946 50  0000 L CNN
+F 1 "1n" H 13215 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 13138 1750 50  0001 C CNN
+F 3 "~" H 13100 1900 50  0001 C CNN
+	1    13100 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C61
+U 1 1 5EB4A3EF
+P 12700 1900
+F 0 "C61" H 12815 1946 50  0000 L CNN
+F 1 "10n" H 12815 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12738 1750 50  0001 C CNN
+F 3 "~" H 12700 1900 50  0001 C CNN
+	1    12700 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C59
+U 1 1 5EB4A3F5
+P 12300 1900
+F 0 "C59" H 12415 1946 50  0000 L CNN
+F 1 "100n" H 12415 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 12338 1750 50  0001 C CNN
+F 3 "~" H 12300 1900 50  0001 C CNN
+	1    12300 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0134
+U 1 1 5EB4A3FB
+P 12700 2050
+F 0 "#PWR0134" H 12700 1800 50  0001 C CNN
+F 1 "GND" H 12705 1877 50  0000 C CNN
+F 2 "" H 12700 2050 50  0001 C CNN
+F 3 "" H 12700 2050 50  0001 C CNN
+	1    12700 2050
+	1    0    0    -1  
+$EndComp
+Text Label 12300 1750 0    50   ~ 0
+VDC_30
+$Comp
+L Device:C C63
+U 1 1 5EB4A408
+P 13450 1900
+F 0 "C63" H 13565 1946 50  0000 L CNN
+F 1 "100p" H 13565 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13488 1750 50  0001 C CNN
+F 3 "~" H 13450 1900 50  0001 C CNN
+	1    13450 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C65
+U 1 1 5EB4A40E
+P 13850 1900
+F 0 "C65" H 13965 1946 50  0000 L CNN
+F 1 "10p" H 13965 1855 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 13888 1750 50  0001 C CNN
+F 3 "~" H 13850 1900 50  0001 C CNN
+	1    13850 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13850 1750 13450 1750
+Connection ~ 13100 1750
+Connection ~ 13450 1750
+Wire Wire Line
+	13450 1750 13100 1750
+Wire Wire Line
+	13100 2050 13450 2050
+Connection ~ 13100 2050
+Connection ~ 13450 2050
+Wire Wire Line
+	13450 2050 13850 2050
+Text Notes 12150 800  0    89   Italic 18
+One SiPM, Compact Packing
+Wire Notes Line
+	12050 600  15950 600 
+Wire Notes Line
+	15950 600  15950 3950
+Wire Notes Line
+	15950 3950 12050 3950
+Wire Notes Line
+	12050 600  12050 3950
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5EB1F1AF
+P 12400 6000
+F 0 "FID1" H 12485 6046 50  0000 L CNN
+F 1 "Fiducial" H 12485 5955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12400 6000 50  0001 C CNN
+F 3 "~" H 12400 6000 50  0001 C CNN
+	1    12400 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5EB201C1
+P 12400 6200
+F 0 "FID2" H 12485 6246 50  0000 L CNN
+F 1 "Fiducial" H 12485 6155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12400 6200 50  0001 C CNN
+F 3 "~" H 12400 6200 50  0001 C CNN
+	1    12400 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5EB20B40
+P 12950 6000
+F 0 "FID3" H 13035 6046 50  0000 L CNN
+F 1 "Fiducial" H 13035 5955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12950 6000 50  0001 C CNN
+F 3 "~" H 12950 6000 50  0001 C CNN
+	1    12950 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID4
+U 1 1 5EB20B46
+P 12950 6200
+F 0 "FID4" H 13035 6246 50  0000 L CNN
+F 1 "Fiducial" H 13035 6155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12950 6200 50  0001 C CNN
+F 3 "~" H 12950 6200 50  0001 C CNN
+	1    12950 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID5
+U 1 1 5EB3EB70
+P 13500 6000
+F 0 "FID5" H 13585 6046 50  0000 L CNN
+F 1 "Fiducial" H 13585 5955 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 13500 6000 50  0001 C CNN
+F 3 "~" H 13500 6000 50  0001 C CNN
+	1    13500 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID6
+U 1 1 5EB3EB76
+P 13500 6200
+F 0 "FID6" H 13585 6246 50  0000 L CNN
+F 1 "Fiducial" H 13585 6155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 13500 6200 50  0001 C CNN
+F 3 "~" H 13500 6200 50  0001 C CNN
+	1    13500 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID7
+U 1 1 5EB6733D
+P 12400 5550
+F 0 "FID7" H 12485 5596 50  0000 L CNN
+F 1 "Fiducial" H 12485 5505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12400 5550 50  0001 C CNN
+F 3 "~" H 12400 5550 50  0001 C CNN
+	1    12400 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID8
+U 1 1 5EB67343
+P 12400 5750
+F 0 "FID8" H 12485 5796 50  0000 L CNN
+F 1 "Fiducial" H 12485 5705 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12400 5750 50  0001 C CNN
+F 3 "~" H 12400 5750 50  0001 C CNN
+	1    12400 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID9
+U 1 1 5EB67349
+P 12950 5550
+F 0 "FID9" H 13035 5596 50  0000 L CNN
+F 1 "Fiducial" H 13035 5505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12950 5550 50  0001 C CNN
+F 3 "~" H 12950 5550 50  0001 C CNN
+	1    12950 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID10
+U 1 1 5EB6734F
+P 12950 5750
+F 0 "FID10" H 13035 5796 50  0000 L CNN
+F 1 "Fiducial" H 13035 5705 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 12950 5750 50  0001 C CNN
+F 3 "~" H 12950 5750 50  0001 C CNN
+	1    12950 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID11
+U 1 1 5EB67355
+P 13500 5550
+F 0 "FID11" H 13585 5596 50  0000 L CNN
+F 1 "Fiducial" H 13585 5505 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 13500 5550 50  0001 C CNN
+F 3 "~" H 13500 5550 50  0001 C CNN
+	1    13500 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID12
+U 1 1 5EB6735B
+P 13500 5750
+F 0 "FID12" H 13585 5796 50  0000 L CNN
+F 1 "Fiducial" H 13585 5705 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask3mm" H 13500 5750 50  0001 C CNN
+F 3 "~" H 13500 5750 50  0001 C CNN
+	1    13500 5750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5EBA281E
+P 5450 2950
+F 0 "TP2" H 5508 3068 50  0000 L CNN
+F 1 "TestPoint" H 5508 2977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 5650 2950 50  0001 C CNN
+F 3 "~" H 5650 2950 50  0001 C CNN
+	1    5450 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5EBA4DFF
+P 3200 2950
+F 0 "TP1" H 3258 3068 50  0000 L CNN
+F 1 "TestPoint" H 3258 2977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 3400 2950 50  0001 C CNN
+F 3 "~" H 3400 2950 50  0001 C CNN
+	1    3200 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5EBA89F8
+P 8900 1150
+F 0 "TP5" H 8958 1268 50  0000 L CNN
+F 1 "TestPoint" H 8958 1177 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 9100 1150 50  0001 C CNN
+F 3 "~" H 9100 1150 50  0001 C CNN
+	1    8900 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP7
+U 1 1 5EBAF6A9
+P 13800 2650
+F 0 "TP7" H 13858 2768 50  0000 L CNN
+F 1 "TestPoint" H 13858 2677 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 14000 2650 50  0001 C CNN
+F 3 "~" H 14000 2650 50  0001 C CNN
+	1    13800 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5EBB4686
+P 10550 7950
+F 0 "TP6" H 10608 8068 50  0000 L CNN
+F 1 "TestPoint" H 10608 7977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 10750 7950 50  0001 C CNN
+F 3 "~" H 10750 7950 50  0001 C CNN
+	1    10550 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5EBBC412
+P 6450 8050
+F 0 "TP3" H 6508 8168 50  0000 L CNN
+F 1 "TestPoint" H 6508 8077 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 6650 8050 50  0001 C CNN
+F 3 "~" H 6650 8050 50  0001 C CNN
+	1    6450 8050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5EBC4E5B
+P 6800 4750
+F 0 "TP4" H 6858 4868 50  0000 L CNN
+F 1 "TestPoint" H 6858 4777 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 7000 4750 50  0001 C CNN
+F 3 "~" H 7000 4750 50  0001 C CNN
+	1    6800 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 5EBD4889
+P 15400 7850
+F 0 "TP8" H 15458 7968 50  0000 L CNN
+F 1 "TestPoint" H 15458 7877 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D2.0mm" H 15600 7850 50  0001 C CNN
+F 3 "~" H 15600 7850 50  0001 C CNN
+	1    15400 7850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP9
+U 1 1 5EC01CA0
+P 14300 6300
+F 0 "TP9" H 14358 6418 50  0000 L CNN
+F 1 "TestPoint" H 14358 6327 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_4.0x4.0mm" H 14500 6300 50  0001 C CNN
+F 3 "~" H 14500 6300 50  0001 C CNN
+	1    14300 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR042
+U 1 1 5EC20F44
+P 14300 6300
+F 0 "#PWR042" H 14300 6050 50  0001 C CNN
+F 1 "GND" H 14305 6127 50  0000 C CNN
+F 2 "" H 14300 6300 50  0001 C CNN
+F 3 "" H 14300 6300 50  0001 C CNN
+	1    14300 6300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
